@@ -1,0 +1,9 @@
+# this is just ment as an example
+# you will want to replace this with your own docker-compose.yml ;)
+version: '2'
+services:
+  random:
+    image: stephanlindauer/docker-random-webserver:latest
+    ports:
+        - "80:80"
+    restart: always
