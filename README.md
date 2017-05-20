@@ -14,7 +14,7 @@ the downtime as low as possible.
 ```
 docker run \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v $(pwd)/docker-compose.yml:/docker-compose-updater/docker-compose.yml \
+  -v $(pwd)/docker-compose/:/docker-compose-updater/docker-compose.yml \
   -e CHECK_INTERVAL_SEC=60 \
   stephanlindauer/docker-compose-updater
 ```
