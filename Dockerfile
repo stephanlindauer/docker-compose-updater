@@ -5,4 +5,4 @@ RUN apk update && apk add bash && rm -rf /var/cache/apk/*
 WORKDIR /docker-compose-updater/
 COPY run.sh /run.sh
 
-ENTRYPOINT ["./run.sh"]
+ENTRYPOINT ["/run.sh"]
